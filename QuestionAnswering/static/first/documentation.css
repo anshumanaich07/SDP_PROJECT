@@ -1,0 +1,35 @@
+.jumbotron {
+    background: #6c63ff;
+    filter: brightness(90%);
+}
+
+.head {
+    font-size: 56px;
+}
+
+.heading {
+    font-size: 48px;
+}
+
+.topic {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.block {
+    margin-top: 50px;
+}
+
+.content {
+    line-height: 1.5;
+    font-size: 18px;
+    margin: 100px auto;
+    font-weight: 400;
+    max-width: 100ch;
+}
+
+@media screen and (max-width:768px) {
+    .content {
+        margin: 30px auto;
+    }
+}
