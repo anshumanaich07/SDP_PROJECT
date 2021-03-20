@@ -50,7 +50,7 @@ def details(request):
     print(source)
     corpus = []
     # stopWords = set(stopwords.words("english"))
-    refrences = []  # list of referenced links
+    references = []  # list of referenced links
     start_timer = time.time()
     try:
       sq = wikipedia.search(source, results=3)
@@ -64,7 +64,7 @@ def details(request):
         corpus.append(imp_words)
         references.append(wikipedia.page(j).url)
         references = list(dict.fromkeys(references))
-        c.update({'refrences': references})
+        c.update({'references': references})
         one_paragraph = prepare_content_QA(corpus)
         first_word = source.split()[0]
         first_word = first_word.lower()
